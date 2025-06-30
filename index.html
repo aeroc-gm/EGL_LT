@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LT 환자 에글란딘 투여량 계산기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LT 환자 에글란딘 투여량 계산기</h1>
+
+        <div class="checkboxes">
+            <label><input type="radio" name="abo" value="match" checked onclick="setMaxHours()"> ABO 일치 (최대 7일)</label>
+            <label><input type="radio" name="abo" value="mismatch" onclick="setMaxHours()"> ABO 불일치 (최대 14일)</label>
+        </div>
+
+        <label>환자 체중 (kg):
+            <input type="number" id="weight" min="0">
+        </label>
+
+        <label>투여 시간 (hr):
+            <input type="number" id="hours" min="0">
+        </label>
+
+        <button onclick="calculateDose()">계산하기</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
