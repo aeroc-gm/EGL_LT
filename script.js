@@ -38,5 +38,5 @@ function calculateDose() {
     document.getElementById("result").innerHTML = 
         `총 투여량: <strong>${totalDose.toFixed(2)} mcg</strong><br>` +
         `필요 앰플 수: <strong>${ampoules} 개</strong><br>` +
-        `(최대 투여 시간: ${hours} hr)`;
+        `(투여 시간: ${hours} hr)`;
 }
